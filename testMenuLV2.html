@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .header{
+        display: flex;
+    }
+    .menu{
+        width: 70%;
+    }
+    #nav {
+        display: inline-block;
+    }
+
+    #nav > li{
+        display: inline-block;
+    }
+
+    #nav li{
+        position: relative;
+    }
+
+    #nav, .subnav{
+    list-style-type: none;
+}
+
+    #nav .subnav{
+        display: none;
+        position: absolute;
+        left: 0;
+        /* top: 100%; */
+        margin-top: 20px;
+        min-width: 160px;
+        background-color: aliceblue;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .subnav li{
+        /* width: 100%; */
+        padding: 20px 0px;
+    }
+
+    .subnav > li > a{
+        padding: 20px;
+    }
+
+    #nav > li > a{
+        padding: 0 30px;
+        text-transform: uppercase;
+    }
+
+    #nav li:hover .subnav{
+        display: block;
+    }
+
+    #nav > li:hover > a,
+    .subnav > li:hover > a{
+        padding: 20px;
+        background-color: aqua;
+
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">More</a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        display: flex;   
+    }
+    .menu{
+        display: flex;
+        background-color: black;
+    }
+
+    #nav{
+        display: inline-block;
+    }
+    
+    #nav, .subnav{
+    list-style-type: none;
+}
+
+    #nav > li{
+    display: inline-block;
+}
+
+    #nav li{
+    position: relative;
+}
+
+    #nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    #nav > li > a{
+        color: white;
+        text-transform: uppercase;
+}
+
+    #nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+/* khi di chuột đến more sẽ hiện lớp con subnav của nó */
+#nav  li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a{
+    /* display: none;  */
+    color: #333; 
+    padding: 0 16px;
+    line-height: 38.5px;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #333;
+    background-color: #ccc;
+
+}   
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> -->
